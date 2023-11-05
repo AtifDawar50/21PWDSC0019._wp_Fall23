@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="main.js"></script>
+
+    <title>OLMS</title>
+
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center; color:chartreuse">Online Library <span>Management System</span>  OLMS </h1>
+    </header>
+    <div class="container">
+        <div class="book-list">
+            <h2 style="text-align: center;"><b>Book List</b></h2>
+            <ol>
+                <li>data science:abc,n1</li>
+                <li>ML:Applied ML</li>
+                <li>introduction to data science:Atif ullah  </li>
+                <li>Advance state foor data science:Number,n</li>
+                <li>Python for data scienceAny think,n</li>
+                <li>C++:indian school for DS,n</li>
+            </ol>
+        </div>
+        <div class="add-book">
+            <h2 style="text-align: center;text-decoration:aqua">Add New Book</h2>
+            <label for="auther"></label>
+            <input style="text-align: center;" type="text" name="AUTHOR" placeholder="AUTHOR"><br>
+            <label for="title"></label>
+            <input style="text-align: center;" type="text" name="TITLE" placeholder="TITLE"><br>
+            <label for="ISBN"></label>
+            <input style="text-align: center;" type="text" name="ISBN" placeholder="ISBN"><br><br>
+
+            <button onclick="addBook()" ><b style="text-align: center;">Add Book</b></button>
+            
+        </div>
+        <div style="background-color: white;" class="search">
+            <h2 style="text-align: center;">Search for Books</h2>
+            <input style="text-align: center;" type="text" id="searchInput" placeholder="Enter title or author"><br><br>
+            <button style="justify-content: center;" onclick="searchBooks()"><b>Search</b></button>
+            <div id="searchResults"></div>
+        </div>
+        
+    </div>
+</body>
+</html>
