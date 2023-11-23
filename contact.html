@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    /* Your different styles can be placed here */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .navbar-brand {
+      color: #333;
+      margin-right: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2, h3 {
+      color: #444;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <!-- Your HTML content remains the same -->
+</body>
+</html>
+</head>
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <a class="navbar-brand" href="cart.html">Cart</a>
+    <a class="navbar-brand" href="payment.html">Payment</a>
+  </nav>
+
+  <!-- Contact Information -->
+  <div class="container mt-4">
+    <h1>Contact Us</h1>
+    <hr>
+    <h3>for any queries or feedback:</h3>
+    <ul>
+      <li><strong>Address:</strong> Hayatabad foodstreet </li>
+      <li><strong>Phone:</strong> +92 3315060542</li>
+      <li><strong>Email:</strong> ajdwr50@gmail.com</li>
+    </ul>
+    <h2>Connect with us on social media:</h2>
+    <ul>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul>
+  </div>
+
+  <!-- Contact Form -->
+  <div class="container mt-4">
+    <h3>Contact Form</h3>
+    <hr>
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    const contactForm = document.getElementById('contact-form');
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      alert('Message submitted. We will get back to you soon!');
+      contactForm.reset();
+    });
+  </script>
+</body>
+</html>
